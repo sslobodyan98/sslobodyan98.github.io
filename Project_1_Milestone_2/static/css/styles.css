@@ -17,7 +17,13 @@ body {
   margin:0;
 }
 
-@media only screen and (max-width: 750px) {
+@media print {
+  .screen_only{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 640px) {
   .topnav ul {
     display: none;
   }

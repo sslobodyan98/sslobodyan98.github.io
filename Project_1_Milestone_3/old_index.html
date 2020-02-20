@@ -1,93 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>CUS1172</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1"> <!--use name not class!!! -->
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="static/plugins/font-awesome/css/font-awesome.css">
-  <link rel="stylesheet" type="text/css" href="static/css/styles.css">
-  <style>
-
-  </style>
-</head>
-<body>
-
-<nav class="topnav screen_only navbar-default navbar-expand-sm"> <!--fixed-top vs sticky-top BS4 navbar issue-->
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="collapsibleNavbar">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link active" href="index.html" style="border-right: solid 1px #d3d3d3; text-transform:uppercase; letter-spacing:2px; font-size: 10px; padding: 18px;"><b>Svyatoslav Slobodyan</b></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#BasicProfile">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#EducationSummary">Education</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#Experience">Resume</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#ProgrammingSkills">Skills</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#FunStuff">Fun Stuff</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#Projects">Projects</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-
-<div class="container AllInfo">
-  <div class="row">
-    <div class="col-md-4 BasicProfile">
+<html>
+  <head>
+    <title>CUS1172</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--use name not class!!! -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="static/plugins/font-awesome/css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="static/css/styles.css">
+    <!-- <link rel="stylesheet" type="text/css" href="static/css/reset.css" -->
+  <body>
+    <style type="text/css">
+      table, th, td {
+      border: 1px solid black;
+      }
+    </style>
+    <nav class="topnav screen_only navbar-default navbar-expand-sm fixed-top">
+      <!-- topnav screen_only  -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html" style="border-right: solid 1px #d3d3d3; text-transform:uppercase; letter-spacing:2px; font-size: 10px; padding: 18px;"><b>Svyatoslav Slobodyan</b></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#BasicProfile">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#EducationSummary">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Experience">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#ProgrammingSkills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#FunStuff">Fun Stuff</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Projects">Projects</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+<div class="container" style="margin-top:100px">
+    <div class="BasicProfile screen_only container">
+<div class="row">
+        <div class="col-md-4">
       <h2 id="BasicProfile" align="center">Basic Profile</h2>
-      <div class="ProfileText" align="left">
+      <div class="Profile Text" align="left">
         <img src="https://media-exp1.licdn.com/dms/image/C4E03AQG4EJNzeR2v_g/profile-displayphoto-shrink_200_200/0?e=1585785600&v=beta&t=r44HY2_pqTrcS42qG6xTGiKtsMKZM-8lohCtffLFgFs"
           style="width: 10em;
           border-radius: 50%;
           display: block;">
         <p>Hi, I&apos;m Svyatoslav Slobodyan. I like building things.
-          I am a <a href="https://www.stjohns.edu" style="color:#444; text-decoration: none; border-bottom: 1px #444 dotted;">St. Johns University</a> Computer Science major, tech enthusiast, and
-          the co-founder and CTO of <a href="https://kaosperformance.com" style="color:#444; text-decoration: none; border-bottom: 1px #444 dotted;">Kaos Performance</a>. Previously I have worked at <a href="https://synciot.io" style="color:#444; text-decoration: none; border-bottom: 1px #444 dotted;">SyncIoT</a> and for
+          I am a <a href="https://www.stjohns.edu" style="color:#444;">St. Johns University</a> Computer Science major, tech enthusiast, and
+          the co-founder and CTO of <a href="https://kaosperformance.com" style="color:#444;">Kaos Performance</a>. Previously I have worked at <a href="https://synciot.io" style="color:#444;">SyncIoT</a> and for
           The Department of Information Technology and Telecommunications.
         </p>
       </div>
       <div class="container">
         <img src="static/images/classic.jpg"  style="width:100%; height:0%;">
-  				<p id="copyright">&copy; Svyatoslav Slobodyan <a href="https://sslobodyan98.github.io/Project_1_Milestone_3/index.html" >svyatoslavslobodyan.dev</a></p>
+  				<p id="copyright">&copy; Svyatoslav Slobodyan <a href="https://sslobodyan98.github.io/Project_1_Milestone_2/index.html" >svyatoslavslobodyan.dev</a></p>
       </div>
-      <ul class="nav nav-pills flex-column">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Active</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#">Disabled</a>
-        </li>
-      </ul>
     </div>
-    <div class="col-md-8 information-content">
 
+    <div class="EducationSummary">
+      <div class="col-md-8" style="background-color:red">
       <h2 id="EducationSummary" align="center">Education</h2>
       <span class="Edutxt">Currently finishing my B.S. Computer Science with a concentration in
       Business Administration
       </span>
+    </div>
+  </div>
+
+
+    <div class="Experience">
 
       <h2 id="Experience" align="center">Experience</h2>
       <h6 class="Job">SyncIoT - Software Engineer Intern</h6>
@@ -123,6 +115,9 @@
         <li>Used MongoDB, LibreOffice, SQL and other technologies to simplify end-user tasks.</li>
       </ul>
 
+  </div>
+
+    <div class="ProgrammingSkills">
       <h2 id="ProgrammingSkills" align="center">Programming Skills</h2>
       <p>HTML</p>
       <div class="container" style="width:100%; background-color:#ddd; border-radius: 25px; ">
@@ -130,7 +125,7 @@
       </div>
       <p>CSS</p>
       <div class="container" style="width:100%; background-color:#ddd; border-radius: 25px; ">
-        <div class="skills html" style="width:80%; background-color:#4CAF50; text-align:right; padding:10px; padding-left: 0;border-radius: 25px;">4/5</div>
+        <div class="skills html" style="width:80%; background-color:#4CAF50; text-align:right; padding:10px; border-radius: 25px;">4/5</div>
       </div>
       <p>Python</p>
       <div class="container" style="width:100%; background-color:#ddd; border-radius: 25px; ">
@@ -144,7 +139,8 @@
       <div class="container" style="width:100%; background-color:#ddd; border-radius: 25px; ">
         <div class="skills html" style="width:40%; background-color:#4CAF50; text-align:right; padding:10px; border-radius: 25px;">2/5</div>
       </div>
-
+    </div>
+    <div class="GeneralInterests">
       <h2 id="FunStuff" align="center">I Like</h2>
       <li style="margin:1em;">
         Cars
@@ -168,7 +164,8 @@
       </li>
       <li style="margin:1em;">Good design
       </li>
-
+    </div>
+    <div class="Projects">
       <h2 id="Projects" align="center">Projects in this course</h2>
       <h4>Vertical headers:</h4>
       <table>
@@ -184,11 +181,10 @@
         <input type="checkbox" class="vote" value="Backend"> I enjoy developing the <b>Backend</b><br>
         <input type="submit" value="Submit">
       </form>
-
-      </div>
+    </div>
+    </div>
     </div>
   </div>
-</div>
-
-</body>
+  </body>
+  </head>
 </html>

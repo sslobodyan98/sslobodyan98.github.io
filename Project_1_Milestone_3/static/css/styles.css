@@ -7,9 +7,10 @@
   width: 100%;
 } */
 
-body {
+ body {
   font-family: 'Source Sans Pro', sans-serif;
   background: #F4F4F4;
+  /* background-color: blue; */
   font-size: 14px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -61,10 +62,11 @@ body {
   }
 } */
 
+
 .topnav ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  /* margin: 0;
+  padding: 0; */
   overflow: hidden;
   background-color: #FFFFFF;
   border-style: solid;
@@ -81,7 +83,7 @@ body {
   /* border-right:1px solid #d3d3d3 */
 /* } */
 
-.topnav li a {
+ .topnav li a {
   display: block;
   color: #444;
   text-align: center;
@@ -98,23 +100,33 @@ body {
   background-color: #d3d3d3;
 } */
 
-.BasicProfile {
-  background-color:#F4F4F4;
+/* .BasicProfile { */
+  /* background-color:#F4F4F4; */
   /* width: 22em; */
-  margin-top: 5%;
+  /* margin-top: 5%; ////
   margin-left: 3%;
+} */
+
+.AllInfo {
+  /* margin-top:60px; */
+  /* margin-left: 30px; */
+  background-color:#F4F4F4;
 }
 
-.EducationSummary {
+.BasicProfile {
+  margin-left: -60px;
+
+}
+
+.information-content {
+  padding-left: 70px;
   background-color:#FFFFFF;
   border-style: solid;
   border-width: 1px;
   border-color: #d3d3d3;
-  margin-left: 30%;
-  margin-right: 5%;
-  margin-top: -30%;
 }
 
+/*
 .Experience {
   background-color:#FFFFFF;
   border-style: solid;
@@ -151,20 +163,22 @@ body {
   border-color: #d3d3d3;
   margin-left: 30%;
   margin-right: 5%;
-}
+} */
 
 .Experience li {
-  margin: 2em;
+  /* margin: 2em; */
 }
 
 .Job {
   align: left;
-  margin:2em;
+  margin-bottom: 8px;
+  font-weight: bold;
 }
 
 .Dates {
   align: left;
-  margin:2em;
+  margin-bottom: 8px;
+  font-weight: bold;
 }
 
 h6 {
@@ -188,5 +202,37 @@ table, th, td {
   color: #444;
   text-decoration: none;
   border-bottom: 1px #444 dotted;
+
+}
+
+/* testing iphone7 and 8 in Chrome */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 667px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    /* .topnav ul {
+      display: none;
+    } */
+    .BasicProfile {
+      margin-left: 0;
+      margin-top: 0;
+    }
+
+    .AllInfo {
+      margin-top:-50px;
+      padding-top: 0;
+      padding: 20px;
+    }
+    iframe {
+      width: 250px;
+      height: 150px;
+    }
+    .information-content {
+      padding-left: 5px;
+    }
+    .ProfileText {
+      align: center;
+    }
 
 }
